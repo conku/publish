@@ -1,6 +1,6 @@
 ## Publish
 
-The Publish Plugin decouples the timing of data updates in the [QOR Admin](http://github.com/conku/admin) interface from the display of data on the frontend of the website which [QOR Admin](http://github.com/conku/admin) is backing. Effectively, a [GORM](https://github.com/jinzhu/gorm) model can be withheld from frontend display until it is "published".
+The Publish Plugin decouples the timing of data updates in the [QOR Admin](http://github.com/conku/admin) interface from the display of data on the frontend of the website which [QOR Admin](http://github.com/conku/admin) is backing. Effectively, a [GORM](https://github.com/conku/gorm) model can be withheld from frontend display until it is "published".
 
 [![GoDoc](https://godoc.org/github.com/conku/publish?status.svg)](https://godoc.org/github.com/conku/publish)
 
@@ -41,10 +41,9 @@ publish.Discard(&product)
 
 ## Publish Event
 
-To avoid a large amount (*n*) of draft events when applying the [Publish](https://github.com/conku/publish) feature to a set of (*n*) records, it is possible to batch the events into a single, high-level event which represents the set of (*n*) events. To do this, use the `PublishEvent` feature.
+To avoid a large amount (_n_) of draft events when applying the [Publish](https://github.com/conku/publish) feature to a set of (_n_) records, it is possible to batch the events into a single, high-level event which represents the set of (_n_) events. To do this, use the `PublishEvent` feature.
 
 For example, when sorting products, say you have changed 100 products' positions but don't want to show 100 products as draft nor have to go through the horrible process of publishing 100 products, one at a time. Instead, you can show a single, high-level event such as `Changed products' sorting` in the draft page. After publishing this single event, all of the associated position changes will be published.
-
 
 ```go
 // Register Publish Event
@@ -88,6 +87,7 @@ Admin.AddResource(Publish)
 ```
 
 [Publish Demo: http://demo.getqor.com/admin/publish](http://demo.getqor.com/admin/publish)
+
 ## License
 
 Released under the [MIT License](http://opensource.org/licenses/MIT).

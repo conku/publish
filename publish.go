@@ -5,11 +5,11 @@ import (
 	"strings"
 
 	"github.com/conku/admin"
+	"github.com/conku/gorm"
 	"github.com/conku/qor"
 	"github.com/conku/qor/resource"
 	"github.com/conku/qor/utils"
 	"github.com/conku/worker"
-	"github.com/jinzhu/gorm"
 
 	"reflect"
 )

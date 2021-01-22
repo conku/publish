@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/conku/gorm"
 	"github.com/conku/qor/utils"
-	"github.com/jinzhu/gorm"
 )
 
 type resolver struct {

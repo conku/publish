@@ -3,10 +3,10 @@ package publish_test
 import (
 	"fmt"
 
+	"github.com/conku/gorm"
 	"github.com/conku/l10n"
 	"github.com/conku/publish"
 	"github.com/conku/qor/test/utils"
-	"github.com/jinzhu/gorm"
 	_ "github.com/mattn/go-sqlite3"
 )
 

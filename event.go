@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/conku/gorm"
 	"github.com/conku/qor"
-	"github.com/jinzhu/gorm"
 )
 
 // EventInterface defined methods needs for a publish event

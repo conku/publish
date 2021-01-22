@@ -3,9 +3,9 @@ package publish_test
 import (
 	"testing"
 
+	"github.com/conku/gorm"
 	"github.com/conku/l10n"
 	"github.com/conku/publish"
-	"github.com/jinzhu/gorm"
 )
 
 type Book struct {
